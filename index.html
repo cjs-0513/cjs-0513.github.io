@@ -10,6 +10,9 @@
       margin: 0;
       padding: 0;
     }
+    html {
+      scroll-behavior: smooth;
+    }
     body {
       font-family: 'Arial', sans-serif;
       display: flex;
@@ -27,61 +30,88 @@
       font-size: 24px;
       margin-bottom: 10px;
     }
-    .sidebar p {
-      font-size: 14px;
-      margin: 5px 0;
-    }
-    .sidebar .section-title {
-      margin-top: 20px;
-      font-weight: bold;
+    .sidebar a {
+      display: block;
+      color: white;
       font-size: 16px;
+      font-weight: bold;
+      margin: 15px 0;
+      text-decoration: none;
       border-bottom: 1px solid #ccc;
       padding-bottom: 5px;
     }
+    .sidebar a:hover {
+      text-decoration: underline;
+    }
+
     .main {
       flex: 1;
       padding: 40px;
+      background-color: #f2f2f2;
     }
+
+    .content {
+      width: 100%;
+      max-width: 900px;
+      background-color: white;
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
     .main-section {
-      margin-bottom: 40px;
+      margin-bottom: 60px;
     }
+
     .main-section h2 {
       font-size: 20px;
       margin-bottom: 10px;
       border-bottom: 2px solid #ddd;
       padding-bottom: 5px;
     }
+
+    .personal-info {
+      font-size: 16px;
+      margin-bottom: 30px;
+    }
   </style>
 </head>
 <body>
   <div class="sidebar">
     <h1>최준성</h1>
-    <p>학번: 20211034</p>
-    <p>이메일: junsung5130@naver.com</p>
-
-    <div class="section-title">기본 정보</div>
-    <div class="section-title">기술 스택</div>
-    <div class="section-title">경력</div>
-    <div class="section-title">포트폴리오</div>
-    <div class="section-title">교육</div>
-    <div class="section-title">수상 및 자격</div>
+    <a href="#basic">기본 정보</a>
+    <a href="#skills">기술 스택</a>
+    <a href="#career">경력</a>
+    <a href="#portfolio">포트폴리오</a>
+    <a href="#education">교육</a>
+    <a href="#cert">수상 및 자격</a>
   </div>
 
   <div class="main">
-    <div class="main-section">
-      <h2>기술 스택</h2>
-    </div>
-    <div class="main-section">
-      <h2>경력</h2>
-    </div>
-    <div class="main-section">
-      <h2>포트폴리오</h2>
-    </div>
-    <div class="main-section">
-      <h2>교육</h2>
-    </div>
-    <div class="main-section">
-      <h2>수상 및 자격</h2>
+    <div class="content">
+      <div class="main-section" id="basic">
+        <h2>기본 정보</h2>
+        <div class="personal-info">
+          <p><strong>학번:</strong> 20211034</p>
+          <p><strong>이메일:</strong> junsung5130@naver.com</p>
+          <p><strong>직무:</strong> 서버 및 클라우드 엔지니어</p>
+        </div>
+      </div>
+      <div class="main-section" id="skills">
+        <h2>기술 스택</h2>
+      </div>
+      <div class="main-section" id="career">
+        <h2>경력</h2>
+      </div>
+      <div class="main-section" id="portfolio">
+        <h2>포트폴리오</h2>
+      </div>
+      <div class="main-section" id="education">
+        <h2>교육</h2>
+      </div>
+      <div class="main-section" id="cert">
+        <h2>수상 및 자격</h2>
+      </div>
     </div>
   </div>
 </body>
