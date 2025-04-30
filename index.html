@@ -26,10 +26,6 @@
       color: white;
       padding: 30px 20px;
     }
-    .sidebar h1 {
-      font-size: 24px;
-      margin-bottom: 10px;
-    }
     .sidebar a {
       display: block;
       color: white;
@@ -76,22 +72,26 @@
     }
 
     .name-header {
-      font-size: 40px; /* 글씨 크기를 더 키움 */
+      font-size: 40px;
       font-weight: bold;
-      margin-bottom: 10px;
+      margin-bottom: 5px; /* 줄 간격 조정 */
+      border-bottom: none; /* 선 제거 */
     }
 
-    /* "서버 및 클라우드 엔지니어" 텍스트 색상 회색으로 변경 */
     .job-title {
-      color: #7f8c8d; /* 회색 계열로 수정 */
+      color: #7f8c8d;
       font-size: 18px;
       font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .email-info {
+      font-size: 18px;
     }
   </style>
 </head>
 <body>
   <div class="sidebar">
-    <h1>최준성 이력서</h1>
     <a href="#basic">기본 정보</a>
     <a href="#skills">기술 스택</a>
     <a href="#career">경력</a>
@@ -103,10 +103,10 @@
   <div class="main">
     <div class="content">
       <div class="main-section" id="basic">
-        <h2 class="name-header">최준성 이력서</h2>
+        <div class="name-header">최준성 이력서</div>
         <div class="personal-info">
-          <p class="job-title"><strong>서버 및 클라우드 엔지니어</strong></p> <!-- 회색으로 변경 -->
-          <p><strong>이메일:</strong> junsung5130@naver.com</p>
+          <p class="job-title">서버 및 클라우드 엔지니어</p>
+          <p class="email-info"><strong>이메일:</strong> junsung5130@naver.com</p>
         </div>
       </div>
       <div class="main-section" id="skills">
